@@ -1,0 +1,10 @@
+<body class="container mt-4">
+<h3>Editar Usuario</h3>
+
+<form method="post" action="/actualizar/{{u.id}}">
+    <input class="form-control mb-2" name="nombre" value="{{u.nombre}}">
+    <input class="form-control mb-2" name="edad" value="{{u.edad}}">
+    <button class="btn btn-success">Actualizar</button>
+</form>
+
+</body>
