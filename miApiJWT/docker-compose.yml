@@ -1,19 +1,19 @@
 services:
   api:
     build: .
-    container_name: server_fastapi
+    container_name: jwt_fastapi
     command: uvicorn app.main:app --host 0.0.0.0 --port 5000
     ports:
-      - "5000:5000"
+      - "5001:5000"
     volumes:
       - ./app:/app/app
 
   flask:
     build: .
-    container_name: server_flask
+    container_name: jwt_flask
     command: python flask_front/app.py
     ports:
-      - "8000:8000"
+      - "8001:8000"
     volumes:
       - ./flask_front:/app/flask_front
     depends_on:
