@@ -32,8 +32,6 @@ SECRET_KEY = "clave_segura_de_ejemplo"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 10  
 
-# ... (resto de funciones y modelos)
-
 #BD ficticia
 usuarios = [
     {"id": 1, "nombre": "Martin", "edad": 20},
